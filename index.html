@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery</title>
+	</head>
+	<style>
+		#box,#box1 {
+			height: 100px;
+			width: 100px;
+			display: inline-block;
+			background: red;
+		}
+	</style>
+	<body>
+
+		<button id="1">up</button>
+		<br>
+
+		<button id="2">down</button>
+		<br>
+
+		<div id="box"></div>
+		<div id="box1"></div>
+		<hr>
+
+
+		
+
+		 <script src="js/jquery-3.4.1.min.js"></script>
+		 <script>
+		 	$(document).ready(function() {
+		 	
+		 		$("#1").click(function(){
+		 			$("#box").slideUp(2000);
+		 		});
+		 		$("#1").click(function(){
+		 			$("#box1").slideUp(3000);
+		 		});
+		 		$("#2").click(function(){
+		 			$("#box1").slideDown(2000);
+		 		});
+		 		$("#2").click(function(){
+		 			$("#box").slideDown(3000);
+		 		});
+		 	});
+
+		 </script>
+	</body>
+</html>
